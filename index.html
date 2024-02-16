@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Pizza Landing Page</title>
+    <!-- Box Icons -->
+    <link rel="stylesheet"
+  href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+  <!-- Link To CSS -->
+  <link rel="stylesheet" href="styles.css">
+
+</head>
+<body>
+    <!-- Navbar -->
+    <header>
+        <a href="#" class="logo">Pizza Pie</a>
+        <div class="bx bx-menu" id="menu-icon"></div>
+
+        <ul class="navbar">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#menu">Menu</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </header>
+    <!--main-->
+    <main>
+    <!-- Home  Section-->
+    <section class="home" id="home">
+        <div class="home-text">
+            <h1>Pizza Taste</h1>
+            <h2>The tasty pizza of <br> your choice</h2>
+            <a href="#" class="btn">View Menu</a>
+        </div>
+        <div class="home-img">
+            <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8Mnx8fGVufDB8fHx8&w=1000&q=80.png" alt="">
+        </div>
+    </section>
+    <!-- Menu -->
+    <section class="menu" id="menu">
+        <div class="heading">
+            <span>Menu</span>
+            <h2>Tasty menu of the week</h2>
+        </div>
+        <div class="menu-container">
+            <!-- Box 1 -->
+            <div class="box">
+                <div class="box-img">
+                    <img src="https://images.pexels.com/photos/803290/pexels-photo-803290.jpeg?cs=srgb&dl=pexels-beqa-tefnadze-803290.jpg&fm=jpg" alt="">
+                </div>
+                <h2>Cheese Pizza</h2>
+                <h3>Tasty Food</h3>
+                <span>$30.05</span>
+               
+            </div>
+            <!-- Box 2 -->
+            <div class="box">
+                <div class="box-img">
+                    <img src="https://img.freepik.com/free-photo/pepperoni-pizza-with-sausages-cheese-dark-wooden-table_220768-9277.jpg?size=626&ext=jpg" alt="">
+                </div>
+                <h2>Tropical Pizza</h2>
+                <h3>Tasty Food</h3>
+                <span>$42.05</span>
+              
+            </div>
+            <!-- Box 3 -->
+            <div class="box">
+                <div class="box-img">
+                    <img src="https://img.freepik.com/free-photo/top-view-pepperoni-pizza-with-mushroom-sausages-bell-pepper-olive-corn-black-wooden_141793-2158.jpg?w=740&t=st=1661842808~exp=1661843408~hmac=c40f0c154036b96b1dba17947c4e4f7c07f40db983106490402bb0b7b6ec452e" alt="">
+                </div>
+                <h2>Mecaroni Pizza</h2>
+                <h3>Tasty Food</h3>
+                <span>$12.05</span>
+               
+            </div>
+        </div>
+    </section>
+    <!--forms-->
+    <section class="order" id="order">
+        <div class="form1">
+            <!--form 1-->
+            <h3>Choose your Pizza :</h3>
+            <form required>
+                <select>
+                    <option>-- Select Pizza --</option>
+                    <option value="1" label="Cheese Pizza">Cheese Pizza</option>
+                    <option value="2" label="Tropical Pizza">Tropical Pizza</option>
+                    <option value="3" label="Macaroni Pizza">Macaroni Pizza</option>
+                </select>
+            </form>
+        </div>
+        <!--form 2-->
+        <div class="form2">
+            <h3>Select Size :</h3>
+            <form required>
+                <input type="radio" id="regular" name="1">
+                <label for="regular">Regular</label><br>
+                <input type="radio" id="large" name="1">
+                <label for="large">Large</label><br>
+                <br>
+                <label for="quantity">Number of Pizzas : </label>
+                <input type="number" id="quantity" name="quantity" min="1" max="8" value="1">
+                <br>
+                <label for="shape">Shape of Pizza : </label>
+                <select>
+                    <option>-- select shape --</option>
+                    <option value="1" label="Round">Round</option>
+                    <option value="2" label="Square">Square</option>
+                </select>
+                <br>
+                <label for="number of slices">Number of Slices : </label>
+                <select>
+                    <option value="1">6 Slices</option>
+                    <option value="2">8 Slices</option>
+                    <option value="3">12 Slices</option>
+                </select>
+                <div class="form4">
+                    <h3>Payment :</h3><br>
+                    <form required>
+                        <label for="cname">Name on Card</label><br>
+                        <input type="text" id="cname" name="cardname"><br>
+                        <label for="cnum">Credit/Debit card number</label><br>
+                        <input type="text" id="cnum" name="cardnumber"><br>
+                        <label for="expmonth">Exp Month</label><br>
+                        <input type="text" id="expmonth" name="expmonth"><br>
+                        <label for="expyear">Exp Year</label><br>
+                        <input type="text" id="expyear" name="expyear"><br>
+                        <label for="cvv">CVV</label><br>
+                        <input type="text" id="cvv" name="cvv"><br>
+                    </form>
+                </div>
+            </div><br>
+            <div class="button2">
+                <input type="submit" value="Continue to checkout" class="button">
+            </div>
+    </section>
+    </main>
+</body>
+</html>
